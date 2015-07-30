@@ -1,1 +1,1 @@
-QuadraticRace START !!!
+QuadraticRace
