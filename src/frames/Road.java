@@ -9,11 +9,8 @@ public class Road extends Basic {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	Difficulty difficulty;
 	
 	public Road (Difficulty difficulty) {
-		
-		this.difficulty = difficulty;
 
 		PRoad road = new PRoad(difficulty,this);
 		

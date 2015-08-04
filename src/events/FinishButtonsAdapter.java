@@ -4,8 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 
-import frames.Basic;
-import panels.PStart;
+import frames.Start;
 
 public class FinishButtonsAdapter implements ActionListener{
 
@@ -17,13 +16,7 @@ public class FinishButtonsAdapter implements ActionListener{
 	
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		Basic frame = new Basic();
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.add(new PStart(frame));
-		frame.pack();
-		frame.setResizable(false);
-		frame.setLocationRelativeTo(null);
-		frame.setVisible(true);
 		buttonsFrame.dispose();
+		new Start();
 	}
 }

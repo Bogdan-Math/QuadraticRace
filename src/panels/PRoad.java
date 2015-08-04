@@ -104,7 +104,7 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 		speed.wayShow(g);
 		speed.timeShow(g);
 
-		result.show(g,Froad);
+		result.showResult(Froad);
 
 		Color green = new Color(237, 28, 36);
 		Color red = new Color(34, 177, 76);

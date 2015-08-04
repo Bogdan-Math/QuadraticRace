@@ -1,7 +1,5 @@
 package logics;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
@@ -19,10 +17,6 @@ public class Result {
 	private Image imgNeutral = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultNeutral.png")).getImage();
 
 	private Image img = imgNeutral;
-
-	public Image getResult() {
-		return this.img;
-	}
 
 	private Win testWin;
 	private PRoad road;
@@ -57,8 +51,7 @@ public class Result {
 	}
 
 	@SuppressWarnings("deprecation")
-	public void show(Graphics g, Road froad) {
-		g = (Graphics2D) g;
+	public void showResult(Road roadFrame) {
 		if (testWin.line()) {
 
 			road.audioThread.stop();// deprecation
@@ -68,11 +61,10 @@ public class Result {
 					road.getPlayer().getBadEnemiesMiss()+road.getPlayer().getGoodEnemiesPicked(),
 					road.getPlayer().getGoodEnemiesMiss()+ road.getPlayer().getBadEnemiesPicked());
 
-			//g.drawImage(img, 0, 0, null);
 			new Picture(img);
 			Win.setGlobalQuality(0);
 			new Finish();
-			froad.dispose();
+			roadFrame.dispose();
 		}
 	}
 }
