@@ -20,5 +20,6 @@ public class CollisionSoundWAV {
 				.getClassLoader().getResource(resource));
 		c.open(ais);
 		c.loop(0);
+		
 	}
 }
