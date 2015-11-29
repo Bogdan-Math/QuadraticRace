@@ -18,9 +18,12 @@ public class StartButtons extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private Image buttonEasy = new ImageIcon(getClass().getClassLoader().getResource("pictures/buttonEasy.png")).getImage();
-	private Image buttonNormal = new ImageIcon(getClass().getClassLoader().getResource("pictures/buttonNormal.png")).getImage();
-	private Image buttonHard = new ImageIcon(getClass().getClassLoader().getResource("pictures/buttonHard.png")).getImage();
+	private Image buttonEasy = new ImageIcon(getClass().getClassLoader().getResource("pictures/buttonEasy.png"))
+			.getImage();
+	private Image buttonNormal = new ImageIcon(getClass().getClassLoader().getResource("pictures/buttonNormal.png"))
+			.getImage();
+	private Image buttonHard = new ImageIcon(getClass().getClassLoader().getResource("pictures/buttonHard.png"))
+			.getImage();
 
 	public StartButtons(JFrame buttonsFrame) {
 

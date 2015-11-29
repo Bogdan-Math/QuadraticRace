@@ -24,8 +24,7 @@ public class StatisticShow extends JPanel {
 		this.road = road;
 	}
 
-	public void showInformation(int i, Graphics g, Font font, Color color,
-			String s, int x, int y) {
+	public void showInformation(int i, Graphics g, Font font, Color color, String s, int x, int y) {
 		g = (Graphics2D) g;
 		g.setFont(font);
 		g.setColor(color);
@@ -47,8 +46,7 @@ public class StatisticShow extends JPanel {
 		g.setColor(Color.BLACK);
 		Font font = new Font("Arial", Font.CENTER_BASELINE, 20);
 		g.setFont(font);
-		g.drawString("Speed: " + v + " m/s", 625, road.getRoad()
-				.getHeight(null) - 50);
+		g.drawString("Speed: " + v + " m/s", 625, road.getRoad().getHeight(null) - 50);
 	}
 
 	public void timeShow(Graphics g) {
@@ -59,7 +57,6 @@ public class StatisticShow extends JPanel {
 		g.setColor(Color.BLACK);
 		Font font = new Font("Arial", Font.CENTER_BASELINE, 20);
 		g.setFont(font);
-		g.drawString("Your time = " + T + " s", 10,
-				road.getRoad().getHeight(null) - 50);
+		g.drawString("Your time = " + T + " s", 10, road.getRoad().getHeight(null) - 50);
 	}
 }

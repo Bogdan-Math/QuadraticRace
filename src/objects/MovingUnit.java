@@ -33,8 +33,7 @@ abstract class MovingUnit {
 	public int dv = 0;
 
 	public Rectangle getRect() {
-		return new Rectangle(this.x, this.y, img.getWidth(null),
-				img.getHeight(null));
+		return new Rectangle(this.x, this.y, img.getWidth(null), img.getHeight(null));
 	}
 
 }

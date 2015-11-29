@@ -8,8 +8,7 @@ public class GlobalMusicMP3 implements Runnable {
 	@Override
 	public void run() {
 		try {
-			Player globalSound = new Player(getClass().getClassLoader()
-					.getResourceAsStream("sounds/sound.mp3"));
+			Player globalSound = new Player(getClass().getClassLoader().getResourceAsStream("sounds/sound.mp3"));
 			globalSound.play();
 		} catch (JavaLayerException e) {
 			e.printStackTrace();

@@ -18,8 +18,7 @@ public class Collision {
 
 		for (int i = 0; i < changedEnemies.size(); i++) {
 			for (int j = i + 1; j < changedEnemies.size(); j++) {
-				if (changedEnemies.get(i).getRect()
-						.intersects(changedEnemies.get(j).getRect())) {
+				if (changedEnemies.get(i).getRect().intersects(changedEnemies.get(j).getRect())) {
 					changedEnemies.remove(j);
 				}
 			}
@@ -87,14 +86,15 @@ public class Collision {
 	public static void paintEnemies(Graphics g, List<Enemy> enemies) {
 
 		g = (Graphics2D) g;
-		//Enemy e = null;
+		// Enemy e = null;
 
 		List<Enemy> syncEnemies = new ArrayList<Enemy>(enemies);
-		//List<Enemy> syncEnemies = new CopyOnWriteArrayList<Enemy>(enemies);// /////////!!!!!!!
+		// List<Enemy> syncEnemies = new CopyOnWriteArrayList<Enemy>(enemies);//
+		// /////////!!!!!!!
 		Iterator<Enemy> i = syncEnemies.iterator();
 
 		while (i.hasNext()) {
-			Enemy e = i.next();///////////??????????????????
+			Enemy e = i.next();/////////// ??????????????????
 			e.move();
 			g.drawImage(e.img, e.x, e.y, null);
 		}

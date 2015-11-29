@@ -6,14 +6,14 @@ import javax.swing.JFrame;
 
 import frames.Start;
 
-public class FinishButtonsAdapter implements ActionListener{
+public class FinishButtonsAdapter implements ActionListener {
 
 	JFrame buttonsFrame;
 
 	public FinishButtonsAdapter(JFrame buttonsFrame) {
 		this.buttonsFrame = buttonsFrame;
 	}
-	
+
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		buttonsFrame.dispose();

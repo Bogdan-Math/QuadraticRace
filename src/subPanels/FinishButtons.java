@@ -19,8 +19,10 @@ public class FinishButtons extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private Image buttonEasy = new ImageIcon(getClass().getClassLoader().getResource("pictures/restart.png")).getImage();
-	private Image buttonNormal = new ImageIcon(getClass().getClassLoader().getResource("pictures/close.png")).getImage();
+	private Image buttonEasy = new ImageIcon(getClass().getClassLoader().getResource("pictures/restart.png"))
+			.getImage();
+	private Image buttonNormal = new ImageIcon(getClass().getClassLoader().getResource("pictures/close.png"))
+			.getImage();
 
 	public FinishButtons(JFrame buttonsFrame) {
 
@@ -35,11 +37,12 @@ public class FinishButtons extends JPanel {
 		b2.setVerticalTextPosition(AbstractButton.BOTTOM);
 		b2.setHorizontalTextPosition(AbstractButton.CENTER);
 
-
 		b1.addActionListener(new FinishButtonsAdapter(buttonsFrame));
 		b2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                System.exit(0);} });
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
 
 		add(b1);
 		add(b2);

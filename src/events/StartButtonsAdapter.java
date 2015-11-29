@@ -22,6 +22,6 @@ public class StartButtonsAdapter implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		buttonsFrame.dispose();
-		new Road(difficulty);		
+		new Road(difficulty);
 	}
 }

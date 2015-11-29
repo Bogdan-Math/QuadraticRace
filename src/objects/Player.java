@@ -104,7 +104,7 @@ public class Player extends MovingUnit {
 		if ((key == KeyEvent.VK_S) || (key == KeyEvent.VK_DOWN)) {
 			dv = 3;
 		}
-		if ((key == KeyEvent.VK_D) || (key == KeyEvent.VK_RIGHT) ) {
+		if ((key == KeyEvent.VK_D) || (key == KeyEvent.VK_RIGHT)) {
 			dx = -10;
 			img = imgRight;
 		}

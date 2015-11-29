@@ -10,11 +10,15 @@ import panels.PRoad;
 
 public class Result {
 
-	private Image imgGood = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultGood.png")).getImage();
+	private Image imgGood = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultGood.png"))
+			.getImage();
 	private Image imgBad = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultBad.png")).getImage();
-	private Image imgAngel = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultAngel.png")).getImage();
-	private Image imgDevil = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultDevil.png")).getImage();
-	private Image imgNeutral = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultNeutral.png")).getImage();
+	private Image imgAngel = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultAngel.png"))
+			.getImage();
+	private Image imgDevil = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultDevil.png"))
+			.getImage();
+	private Image imgNeutral = new ImageIcon(getClass().getClassLoader().getResource("pictures/resultNeutral.png"))
+			.getImage();
 
 	private Image img = imgNeutral;
 
@@ -58,8 +62,8 @@ public class Result {
 			road.enemiesFactory.stop();// deprecation
 
 			quality(Win.getGlobalQuality(),
-					road.getPlayer().getBadEnemiesMiss()+road.getPlayer().getGoodEnemiesPicked(),
-					road.getPlayer().getGoodEnemiesMiss()+ road.getPlayer().getBadEnemiesPicked());
+					road.getPlayer().getBadEnemiesMiss() + road.getPlayer().getGoodEnemiesPicked(),
+					road.getPlayer().getGoodEnemiesMiss() + road.getPlayer().getBadEnemiesPicked());
 
 			new Picture(img);
 			Win.setGlobalQuality(0);

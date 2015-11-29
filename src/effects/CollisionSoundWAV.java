@@ -16,10 +16,9 @@ public class CollisionSoundWAV {
 
 	private void playSound(String resource) throws Throwable {
 		Clip c = AudioSystem.getClip();
-		AudioInputStream ais = AudioSystem.getAudioInputStream(getClass()
-				.getClassLoader().getResource(resource));
+		AudioInputStream ais = AudioSystem.getAudioInputStream(getClass().getClassLoader().getResource(resource));
 		c.open(ais);
 		c.loop(0);
-		
+
 	}
 }

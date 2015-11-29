@@ -52,9 +52,9 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 	// ImageIcon(getClass().getClassLoader().getResource("pictures/TAB.png")).getImage();
 
 	private Player player = new Player(350, this.road.getHeight(null) - 175, 0,
-							new ImageIcon(getClass().getClassLoader().getResource("pictures/player.png")).getImage(),
-							new ImageIcon(getClass().getClassLoader().getResource("pictures/playerRight.png")).getImage(),
-							new ImageIcon(getClass().getClassLoader().getResource("pictures/playerLeft.png")).getImage(), this);
+			new ImageIcon(getClass().getClassLoader().getResource("pictures/player.png")).getImage(),
+			new ImageIcon(getClass().getClassLoader().getResource("pictures/playerRight.png")).getImage(),
+			new ImageIcon(getClass().getClassLoader().getResource("pictures/playerLeft.png")).getImage(), this);
 
 	public Player getPlayer() {
 		return this.player;
@@ -69,7 +69,7 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 
 	public PRoad(Difficulty difficulty, Road Froad) {
 		this.Froad = Froad;
-		setPreferredSize(new Dimension( road.getWidth(null), road.getHeight(null)) );
+		setPreferredSize(new Dimension(road.getWidth(null), road.getHeight(null)));
 		checkDifficulty(difficulty);
 		mainTimer.start();
 		enemiesFactory.start();
@@ -93,10 +93,10 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 	public void paint(Graphics g) {
 		g = (Graphics2D) g;
 
-			g.drawImage(road, 0, player.getLayer1(), null);
-			g.drawImage(road, 0, player.getLayer2(), null);
-			g.drawImage(road, 0, player.getLayer3(), null);
-			g.drawImage(player.img, player.x, player.y, null);
+		g.drawImage(road, 0, player.getLayer1(), null);
+		g.drawImage(road, 0, player.getLayer2(), null);
+		g.drawImage(road, 0, player.getLayer3(), null);
+		g.drawImage(player.img, player.x, player.y, null);
 
 		Collision.paintEnemies(g, enemies);
 
@@ -110,14 +110,10 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 		Color red = new Color(34, 177, 76);
 		Font font = new Font("Arial", Font.CENTER_BASELINE, 20);
 
-		speed.showInformation(player.getBadEnemiesMiss(), g, font, green,
-								"Left behind: +", 625, 25);
-		speed.showInformation(player.getGoodEnemiesPicked(), g, font, red,
-								"Picked up: +", 625, 50);
-		speed.showInformation(player.getBadEnemiesPicked(), g, font, green,
-								"Picked up: -", 625, 75);
-		speed.showInformation(player.getGoodEnemiesMiss(), g, font, red,
-								"Left behind: -", 625, 100);
+		speed.showInformation(player.getBadEnemiesMiss(), g, font, green, "Left behind: +", 625, 25);
+		speed.showInformation(player.getGoodEnemiesPicked(), g, font, red, "Picked up: +", 625, 50);
+		speed.showInformation(player.getBadEnemiesPicked(), g, font, green, "Picked up: -", 625, 75);
+		speed.showInformation(player.getGoodEnemiesMiss(), g, font, red, "Left behind: -", 625, 100);
 	}
 
 	Win testWin = new Win(this, player);
@@ -126,10 +122,10 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 	public void actionPerformed(ActionEvent e) {
 		player.move();
 		repaint();
-		
+
 		enemies = Collision.enemyVsEnemies(enemies);
-		enemies = Collision.removeEnemies(enemies, player);	
-		enemies = Collision.playerVsEnemies(enemies, player);		
+		enemies = Collision.removeEnemies(enemies, player);
+		enemies = Collision.playerVsEnemies(enemies, player);
 	}
 
 	@Override
@@ -139,8 +135,7 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 			try {
 				Thread.sleep(rand.nextInt(this.difficulty));
 
-				enemies.add(new Enemy(rand.nextInt(700), -200,
-						rand.nextInt(50), rand.nextBoolean(), this));
+				enemies.add(new Enemy(rand.nextInt(700), -200, rand.nextInt(50), rand.nextBoolean(), this));
 
 			} catch (InterruptedException e) {
 				e.printStackTrace();

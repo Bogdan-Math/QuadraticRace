@@ -14,10 +14,10 @@ public class PPicture extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	private Image picture;
-	
+
 	public PPicture(Image picture) {
 		this.picture = picture;
-		setPreferredSize(new Dimension(picture.getWidth(null),picture.getHeight(null)));
+		setPreferredSize(new Dimension(picture.getWidth(null), picture.getHeight(null)));
 	}
 
 	public void paintComponent(Graphics g) {
