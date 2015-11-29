@@ -1,1 +1,1 @@
-# QuadraticRace
+QuadraticRace - little game for desktop.
