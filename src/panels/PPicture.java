@@ -11,8 +11,6 @@ public class PPicture extends JPanel {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
-
 	private Image picture;
 
 	public PPicture(Image picture) {

@@ -13,7 +13,6 @@ public class PFinish extends JPanel {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 
 	public PFinish(JFrame buttonsFrame) {
 		setLayout(new GridLayout(2, 1));

@@ -9,7 +9,6 @@ public class Picture extends Basic {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 
 	public Picture(Image result) {
 		PPicture picture = new PPicture(result);

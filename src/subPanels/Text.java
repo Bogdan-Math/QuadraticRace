@@ -12,7 +12,6 @@ public class Text extends JPanel {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 
 	public Text(String text) {
 		setLayout(new BorderLayout());

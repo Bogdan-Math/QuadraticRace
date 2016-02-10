@@ -8,8 +8,6 @@ public class Road extends Basic {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
-
 	public Road(Difficulty difficulty) {
 
 		PRoad road = new PRoad(difficulty, this);

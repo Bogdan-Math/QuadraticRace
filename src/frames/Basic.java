@@ -8,7 +8,6 @@ public class Basic extends JFrame {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 
 	public Basic() {
 		this("Quadratic Race");

@@ -31,7 +31,6 @@ public class PRoad extends JPanel implements ActionListener, Runnable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 3267084974875690838L;
 	private int difficulty;
 	private int winLine = 25000;
 

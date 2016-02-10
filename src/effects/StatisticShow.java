@@ -15,7 +15,6 @@ public class StatisticShow extends JPanel {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
 
 	private static final double TIME_START = System.currentTimeMillis();
 	private PRoad road;

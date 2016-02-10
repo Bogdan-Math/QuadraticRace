@@ -13,8 +13,6 @@ public class PStart extends JPanel {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
-
 	public PStart(JFrame buttonsFrame) {
 		setLayout(new GridLayout(2, 1));
 		add(new Text("Choose your difficulty"));
